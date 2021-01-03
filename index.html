@@ -13,6 +13,7 @@
 
 <body>
     <section>
+        <div class="circle"></div>
         <header>
             <a href="#" class="logo"> <img class="imagen" src="imagenes/logov.png"></a>
             <ul>
@@ -36,15 +37,65 @@
                 <img src="imagenes/img3.png" class="sandero">
             </div>
         </div>
-        <div class="tres">
-            <ul>
-                <li><img src="imagenes/img1.png" width="100px" height="100px"></li>
-                <li><img src="imagenes/img2.png" width="100px" height="100px" alt=""></li>
-                <li><img src="imagenes/img3.png" width="100px" height="100px" alt=""></li>
+        <div>
+            <ul class="tres">
+                <li><img src="imagenes/img1.png" onclick="imgSlider('imagenes/img1.png');channgeCircleColor('blue')" class="foto"></li>
+                <li><img src="imagenes/img2.png" width="550" height="350" onclick="imgSlider('imagenes/img2.png');channgeCircleColor('red')" class="foto"></li>
+                <li><img src="imagenes/img3.png" onclick="imgSlider('imagenes/img3.png');channgeCircleColor('#ff8000')" class="foto"></li>
+            </ul>
+            <ul class="sci">
+                <li>
+                    <a href="#"><img src="imagenes/facebook.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imagenes/instagram.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imagenes/whatsapp.png"></a>
+                </li>
             </ul>
 
         </div>
     </section>
+    <section class="seccion2">
+        <h3> <span> Tarifas </span> de Revisión técnico mecánica y emisiones contaminantes 2020</h3>
+        <p class="parrafo">REGULACIÓN MINISTERIO DE TRANSPORTE RESOLUCIÓN N°3318 DE 14 DE SEPTIEMBRE DE 2015 "Por el cual establecen las condiciones, características de seguridad y rangos de precios al usuario para servicios prestados por Centros de Diagnóstico Automotor
+            y se modifica la resolución 3768 de 2013”. vigentes a partir del 1 de Enero de 2020 en cumplimiento de la Resolución</p>
+
+    </section>
+
+    <section class="precios">
+        <h2 class="titulo">TABLA DE PRECIOS</h2>
+        <div class="tabla">
+            <div class="motos">
+                <img src="imagenes/img2.png" alt="">
+                <h2 class="titulo-m">MOTOCICLETAS</h2>
+                <p class="parrafo-precio"><span class="sp">$</span> 143.827<span class="sp"> / anual</span> </p>
+
+            </div>
+            <div class="carros">
+                <img src="imagenes/img3.png" alt="">
+                <h2 class="titulo-c">VEHICULOS LIVIANOS</h2>
+                <p class="parrafo-precio"><span class="sp">$</span> 143.827<span class="sp"> / anual</span> </p>
+            </div>
+            <div class="motocarro">
+                <img src="imagenes/img1.png" alt="">
+                <h2 class="titulo-m">MOTOCARROS</h2>
+                <p class="parrafo-precio"><span class="sp">$</span> 143.827<span class="sp"> / anual</span> </p>
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.sandero').src = anything;
+        }
+
+        function channgeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
 
 </body>
 
