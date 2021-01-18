@@ -640,3 +640,166 @@ h3>span {
 .peritaje {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+
+/************************************** PAGINA DE NORMATIVDAD *******************************************/
+
+.sub {
+    min-height: 95px;
+    display: block;
+    padding: 30px 0;
+}
+
+.sub-titulo {
+    font-size: 26px;
+    text-align: center;
+}
+
+.sub-titulo__parrafo {
+    text-align: center;
+    margin-top: 23px;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+
+/* <!-- -------------------------------las normas que hay -------------------------------------> */
+
+.leyes {
+    padding: 0;
+    flex-direction: column;
+    min-height: 300px;
+    transform: translateX(0);
+}
+
+.leyes1 {
+    margin: 0 0 10px 0;
+    transform: translateX(0);
+    color: #ff8000;
+    font-size: 40px;
+}
+
+.conjunto__fondo {
+    background-color: black;
+    padding-top: 40px;
+    display: flex;
+    max-width: 100vw;
+}
+
+.conjunto {
+    background-color: black;
+    padding: 15px 15px;
+    position: relative;
+    width: 422px;
+    /* height: 194px; */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.conjunto__imagen {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 10px 0 0;
+}
+
+.conjunto__texto {
+    position: absolute;
+    top: 55px;
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* <!-- -------------------------------las resoluciones que hay -------------------------------------> */
+
+.reso {
+    padding: 20px 0;
+}
+
+
+/* <!-- -------------------------------las circulares que hay -------------------------------------> */
+
+.cir {
+    top: 19px;
+}
+
+.espaciado {
+    height: 50px;
+    background-color: black;
+}
+
+
+/* <!-- -------------------------------las leyes que hay -------------------------------------> */
+
+.ley {
+    padding: 20px 0;
+}
+
+
+/***************************************** PAGINA DE LOS PROCESOS DE REVISION **********************************/
+
+.proceso {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.proceso__livianos,
+.proceso__motos {
+    width: 50%;
+}
+
+
+/* <!---------------------------------------- proceso de revision de livianos ----------------------------> */
+
+.descripcion {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 38px;
+}
+
+.descripcion__titulos {
+    font-size: 21px;
+}
+
+.span__nar {
+    color: #ff8000;
+}
+
+.descripcion__imagen {
+    width: 150px;
+    height: 150px;
+    clip-path: circle(50% at 50% 50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.proceso__titulo {
+    text-align: center;
+    font-size: 37px;
+    padding: 10px 0;
+}
+
+.proceso__imagen {
+    width: 250px;
+    height: 250px;
+    clip-path: circle(50% at 50% 50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.imagenes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.mot {
+    transform: translateX(232px);
+}
