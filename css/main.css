@@ -39,10 +39,18 @@ header {
 header ul {
     position: relative;
     display: flex;
+    transform: translateX(63px);
 }
 
 header ul li {
     list-style: none;
+    border: 2px solid #ff8000;
+    margin: 0 5px;
+    border-radius: 17px;
+}
+
+header ul li:hover {
+    background-color: #ff8000;
 }
 
 header ul li a {
@@ -51,6 +59,7 @@ header ul li a {
     font-weight: 400;
     margin-left: 20px;
     text-decoration: none;
+    margin: 3px 15px;
 }
 
 .content {
@@ -743,7 +752,7 @@ h3>span {
 
 .proceso {
     background-color: black;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -752,32 +761,6 @@ h3>span {
 .proceso__livianos,
 .proceso__motos {
     width: 50%;
-}
-
-
-/* <!---------------------------------------- proceso de revision de livianos ----------------------------> */
-
-.descripcion {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-top: 38px;
-}
-
-.descripcion__titulos {
-    font-size: 21px;
-}
-
-.span__nar {
-    color: #ff8000;
-}
-
-.descripcion__imagen {
-    width: 150px;
-    height: 150px;
-    clip-path: circle(50% at 50% 50%);
-    border: 2px solid #fff;
-    border-radius: 50%;
 }
 
 .proceso__titulo {
@@ -802,4 +785,62 @@ h3>span {
 
 .mot {
     transform: translateX(232px);
+}
+
+
+/* <!---------------------------------------- proceso de revision de livianos ----------------------------> */
+
+.descripcion__fondo {
+    background-color: black;
+    width: 100%;
+}
+
+.descripcion {
+    display: flex;
+    width: 56%;
+    /* height: 100vh; */
+    justify-content: space-around;
+    padding-top: 38px;
+    margin: 0 318px;
+    /* height: 100vh; */
+}
+
+.descripcion__titulos {
+    font-size: 21px;
+}
+
+.span__nar {
+    color: #ff8000;
+}
+
+.descripcion__imagen {
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.descripcion__grupo {
+    width: 70%;
+}
+
+
+/* <!------------------------------------------- paso 3  ----------------------------------> */
+
+.paso3 {
+    margin-left: 145px;
+    width: 80%;
+}
+
+.paso3__grupo {
+    width: 55%;
+}
+
+
+/* <!------------------------------------------- paso 10  ----------------------------------> */
+
+.entrega {
+    padding-bottom: 25px;
 }
