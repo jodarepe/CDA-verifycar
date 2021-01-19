@@ -51,6 +51,7 @@ header ul li {
 
 header ul li:hover {
     background-color: #ff8000;
+    transform: translateY(-2px);
 }
 
 header ul li a {
